@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eedfdf;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 300%;
+    color: #000000;
+}
+
+.news-article {
+    background: #f70f0f;
+    margin: 20px auto; /* Centers the box horizontally */
+    padding: 20px; /* Keeps spacing inside the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1100px; /* Keeps width under control */
+    width: 100%; /* Ensures responsiveness */
+}
+
+.news-article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.986);
+}
+
+.news-article h2 {
+    margin: 0 0 10px;
+}
+
+.news-article p {
+    line-height: 1.6;
+}
+
+.news-article a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
+.logo-box {
+    position: absolute;
+    top: 50px; /* Distance from the top */
+    left: 50px; /* Distance from the right */
+    width: 200px; /* Adjust box size */
+    height: 100px; /* Adjust box size */
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo-box img {
+    max-width: 100%; /* Ensures the image fits */
+    max-height: 200%;
+    object-fit: contain;
+}
